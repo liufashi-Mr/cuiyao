@@ -1,8 +1,8 @@
 import { DynamicModule, NestModule, Provider } from '@nestjs/common';
-import { FindAllUsersService } from './domain/services/FindAllUsersService';
-import { UserController } from './app/user.controller';
+import { FindAllUsersService } from './domain/services/find-all-users-service';
+import { UserController } from './interface/user.controller';
 import { UserRepository } from './domain/entities/user.repository';
-import { CreateUserService } from './domain/services/CreateUserService';
+import { CreateUserService } from './domain/services/create-user-service';
 
 export class UserModule implements NestModule {
   static readonly controller = [UserController];

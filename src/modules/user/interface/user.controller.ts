@@ -1,12 +1,12 @@
 import { Body, Controller, Get, Inject, Post } from '@nestjs/common';
-import { FindAllUsersService } from '../domain/services/FindAllUsersService';
 import { CreateUserDto } from '../client/dto/create-user.dto';
-import { CreateUserService } from '../domain/services/CreateUserService';
+import { CreateUserService } from '../domain/services/create-user-service';
+import { FindAllUsersService } from '@modules/user/domain/services/find-all-users-service';
 
 @Controller()
 export class UserController {
   @Inject()
-  private readonly getAllUsersService: FindAllUsersService;
+  private readonly findAllUsersService: FindAllUsersService;
 
   @Inject()
   private readonly createUserService: CreateUserService;
@@ -18,6 +18,6 @@ export class UserController {
 
   @Get('users')
   async findAll() {
-    return this.getAllUsersService.execute();
+    return this.findAllUsersService.execute();
   }
 }
