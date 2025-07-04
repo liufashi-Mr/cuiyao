@@ -1,13 +1,15 @@
 import { DynamicModule } from '@nestjs/common';
 import { APP_FILTER } from '@nestjs/core/constants';
-import { TestModule } from 'src/modules/test/test.module';
 import { UserModule } from 'src/modules/user/user.module';
 import GlobalExceptionFilter from './exception/global-exception-filter';
+import { ProjectModule } from '@modules/project/project.module';
+import { ApiModule } from '@/modules/api/api.module';
 
 export class SharedModule {
   static readonly bizModules: DynamicModule[] = [
     UserModule.register(),
-    TestModule.register(),
+    ProjectModule.register(),
+    ApiModule.register(),
   ];
   static register(): DynamicModule {
     return {

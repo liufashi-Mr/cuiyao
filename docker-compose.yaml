@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '4090:4090'
+    environment:
+      - NODE_ENV=production
+    command: pnpm start:prod
+    networks:
+      - app-network
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql
+    ports:
+      - '3306:3306'
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_DATABASE=user_manager
+      - MYSQL_PASSWORD=123456
+      - MYSQL_PORT=3306
+      - MYSQL_USER_NAME=root
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mysql-data:

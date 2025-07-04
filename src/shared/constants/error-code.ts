@@ -52,6 +52,54 @@ export class ErrorCode {
     message: 'No access',
     httpStatus: 403,
   };
+
+  public static USERNAME_ALREADY_EXISTS: ErrorCodeType = {
+    code: '400001',
+    message: 'Username already exists',
+    httpStatus: 400,
+  };
+
+  public static EMAIL_ALREADY_EXISTS: ErrorCodeType = {
+    code: '400002',
+    message: 'Email already exists',
+    httpStatus: 400,
+  };
+
+  public static PHONE_ALREADY_EXISTS: ErrorCodeType = {
+    code: '400003',
+    message: 'Phone number already exists',
+    httpStatus: 400,
+  };
+
+  public static USER_NOT_FOUND: ErrorCodeType = {
+    code: '404001',
+    message: 'User not found',
+    httpStatus: 404,
+  };
+
+  public static PROJECT_NAME_ALREADY_EXISTS: ErrorCodeType = {
+    code: '400101',
+    message: 'Project name already exists for this owner',
+    httpStatus: 400,
+  };
+
+  public static PROJECT_NOT_FOUND: ErrorCodeType = {
+    code: '404101',
+    message: 'Project not found',
+    httpStatus: 404,
+  };
+
+  public static API_NAME_ALREADY_EXISTS: ErrorCodeType = {
+    code: '400201',
+    message: 'API name already exists for this project',
+    httpStatus: 400,
+  };
+
+  public static API_NOT_FOUND: ErrorCodeType = {
+    code: '404201',
+    message: 'API not found',
+    httpStatus: 404,
+  };
 }
 
 export default ErrorCode;
