@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { UpdateUserService } from '../services/update-user.service';
+import { UpdateUserService } from '../../domain/services/update-user.service';
 import { SingleResponse } from '@/shared/dto/single-response';
-import { UpdateUserDto } from '../../client/dto/update-user.dto';
+import { UpdateUserDto } from '../../app/dto/update-user.dto';
 
 @Injectable()
 export class UpdateUserUsecase {

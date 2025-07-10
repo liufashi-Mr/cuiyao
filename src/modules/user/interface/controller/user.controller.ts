@@ -10,14 +10,14 @@ import {
   ParseIntPipe,
   Inject,
 } from '@nestjs/common';
-import { FindUserUsecase } from '../domain/usecases/find-user.usecase';
-import { CreateUserUsecase } from '../domain/usecases/create-user.usecase';
-import { UpdateUserUsecase } from '../domain/usecases/update-user.usecase';
-import { DeleteUserUsecase } from '../domain/usecases/delete-user.usecase';
-import { FindAllUsersUsecase } from '../domain/usecases/find-all-users.usecase';
-import { CreateUserDto } from '../client/dto/create-user.dto';
-import { UpdateUserDto } from '../client/dto/update-user.dto';
-import { QueryUserDto } from '../client/dto/query-user.dto';
+import { FindUserUsecase } from '../../app/usecases/find-user.usecase';
+import { CreateUserUsecase } from '../../app/usecases/create-user.usecase';
+import { UpdateUserUsecase } from '../../app/usecases/update-user.usecase';
+import { DeleteUserUsecase } from '../../app/usecases/delete-user.usecase';
+import { FindAllUsersUsecase } from '../../app/usecases/find-all-users.usecase';
+import { CreateUserDto } from '../../app/dto/create-user.dto';
+import { UpdateUserDto } from '../../app/dto/update-user.dto';
+import { QueryUserDto } from '../../app/dto/query-user.dto';
 
 @Controller('users')
 export class UserController {

@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { User } from '../entities/user.entity';
 import { USER_REPOSITORY } from 'src/shared/constants/repository';
-import { CreateUserDto } from '../../client/dto/create-user.dto';
+import { CreateUserDto } from '../../app/dto/create-user.dto';
 import { ExceptionFactory } from 'src/shared/exception/exception-factory';
 import { ErrorCode } from '@/shared/constants/error-code';
 

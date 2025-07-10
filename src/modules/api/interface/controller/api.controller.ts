@@ -10,14 +10,14 @@ import {
   ParseIntPipe,
   Inject,
 } from '@nestjs/common';
-import { FindApiUsecase } from '../domain/usecases/find-api.usecase';
-import { CreateApiUsecase } from '../domain/usecases/create-api.usecase';
-import { UpdateApiUsecase } from '../domain/usecases/update-api.usecase';
-import { DeleteApiUsecase } from '../domain/usecases/delete-api.usecase';
-import { FindAllApisUsecase } from '../domain/usecases/find-all-apis.usecase';
-import { CreateApiDto } from '../client/dto/create-api.dto';
-import { UpdateApiDto } from '../client/dto/update-api.dto';
-import { QueryApiDto } from '../client/dto/query-api.dto';
+import { FindApiUsecase } from '../../app/usecases/find-api.usecase';
+import { CreateApiUsecase } from '../../app/usecases/create-api.usecase';
+import { UpdateApiUsecase } from '../../app/usecases/update-api.usecase';
+import { DeleteApiUsecase } from '../../app/usecases/delete-api.usecase';
+import { FindAllApisUsecase } from '../../app/usecases/find-all-apis.usecase';
+import { CreateApiDto } from '../../app/dto/create-api.dto';
+import { UpdateApiDto } from '../../app/dto/update-api.dto';
+import { QueryApiDto } from '../../app/dto/query-api.dto';
 
 @Controller('apis')
 export class ApiController {

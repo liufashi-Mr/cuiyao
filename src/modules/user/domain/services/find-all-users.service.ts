@@ -2,7 +2,7 @@ import { Inject, Injectable } from '@nestjs/common';
 import { User } from '../entities/user.entity';
 import { USER_REPOSITORY } from 'src/shared/constants/repository';
 import { PaginationResponse } from '@/shared/dto/pagination-response';
-import { QueryUserDto } from '../../client/dto/query-user.dto';
+import { QueryUserDto } from '../../app/dto/query-user.dto';
 import { Op } from 'sequelize';
 
 @Injectable()

@@ -1,10 +1,10 @@
 import { DynamicModule, Module, Provider } from '@nestjs/common';
-import { UserController } from './interface/user.controller';
-import { FindUserUsecase } from './domain/usecases/find-user.usecase';
-import { CreateUserUsecase } from './domain/usecases/create-user.usecase';
-import { UpdateUserUsecase } from './domain/usecases/update-user.usecase';
-import { DeleteUserUsecase } from './domain/usecases/delete-user.usecase';
-import { FindAllUsersUsecase } from './domain/usecases/find-all-users.usecase';
+import { UserController } from './interface/controller/user.controller';
+import { FindUserUsecase } from './app/usecases/find-user.usecase';
+import { CreateUserUsecase } from './app/usecases/create-user.usecase';
+import { UpdateUserUsecase } from './app/usecases/update-user.usecase';
+import { DeleteUserUsecase } from './app/usecases/delete-user.usecase';
+import { FindAllUsersUsecase } from './app/usecases/find-all-users.usecase';
 import { FindAllUsersService } from './domain/services/find-all-users.service';
 import { FindUserService } from './domain/services/find-user.service';
 import { CreateUserService } from './domain/services/create-user.service';

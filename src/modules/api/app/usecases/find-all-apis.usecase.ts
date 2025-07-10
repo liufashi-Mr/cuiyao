@@ -1,9 +1,10 @@
-import { Injectable } from '@nestjs/common';
-import { FindAllApisService } from '../services/find-all-apis.service';
-import { QueryApiDto } from '../../client/dto/query-api.dto';
+import { Inject, Injectable } from '@nestjs/common';
+import { FindAllApisService } from '../../domain/services/find-all-apis.service';
+import { QueryApiDto } from '../dto/query-api.dto';
 
 @Injectable()
 export class FindAllApisUsecase {
+  @Inject()
   private readonly findAllApisService: FindAllApisService;
 
   async execute(queryDto: QueryApiDto) {

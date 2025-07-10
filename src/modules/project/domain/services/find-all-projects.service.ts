@@ -2,7 +2,7 @@ import { Inject, Injectable } from '@nestjs/common';
 import { Project } from '../entities/project.entity';
 import { PROJECT_REPOSITORY } from 'src/shared/constants/repository';
 import { PaginationResponse } from '@/shared/dto/pagination-response';
-import { QueryProjectDto } from '../../client/dto/query-project.dto';
+import { QueryProjectDto } from '../../app/dto/query-project.dto';
 import { Op } from 'sequelize';
 
 @Injectable()

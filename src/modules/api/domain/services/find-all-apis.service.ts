@@ -2,7 +2,7 @@ import { Inject, Injectable } from '@nestjs/common';
 import { Api } from '../entities/api.entity';
 import { API_REPOSITORY } from 'src/shared/constants/repository';
 import { PaginationResponse } from '@/shared/dto/pagination-response';
-import { QueryApiDto } from '../../client/dto/query-api.dto';
+import { QueryApiDto } from '../../app/dto/query-api.dto';
 import { Op } from 'sequelize';
 
 @Injectable()
@@ -28,7 +28,7 @@ export class FindAllApisService {
       ? ([
           [queryDto.getOrderBy(), queryDto.getOrderDirection()],
         ] as unknown as any)
-      : ([['created_at', 'DESC']] as unknown as any);
+      : ([['createdAt', 'DESC']] as unknown as any);
     const { count, rows } = await this.repository.findAndCountAll({
       where,
       order,

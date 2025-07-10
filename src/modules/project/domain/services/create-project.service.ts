@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { Project } from '../entities/project.entity';
 import { PROJECT_REPOSITORY } from 'src/shared/constants/repository';
-import { CreateProjectDto } from '../../client/dto/create-project.dto';
+import { CreateProjectDto } from '../../app/dto/create-project.dto';
 import { ExceptionFactory } from 'src/shared/exception/exception-factory';
 import { Op } from 'sequelize';
 import { ErrorCode } from '@/shared/constants/error-code';

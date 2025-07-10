@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { DeleteUserService } from '../services/delete-user.service';
+import { DeleteUserService } from '../../../user/domain/services/delete-user.service';
 import { SingleResponse } from '@/shared/dto/single-response';
 
 @Injectable()

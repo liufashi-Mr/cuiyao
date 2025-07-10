@@ -1,9 +1,10 @@
-import { Injectable } from '@nestjs/common';
-import { FindApiService } from '../services/find-api.service';
+import { Inject, Injectable } from '@nestjs/common';
+import { FindApiService } from '../../domain/services/find-api.service';
 import { SingleResponse } from '@/shared/dto/single-response';
 
 @Injectable()
 export class FindApiUsecase {
+  @Inject()
   private readonly findApiService: FindApiService;
 
   async execute(id: number) {

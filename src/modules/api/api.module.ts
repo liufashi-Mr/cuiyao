@@ -1,10 +1,10 @@
 import { DynamicModule, Module, Provider } from '@nestjs/common';
-import { ApiController } from './interface/api.controller';
-import { FindApiUsecase } from './domain/usecases/find-api.usecase';
-import { CreateApiUsecase } from './domain/usecases/create-api.usecase';
-import { UpdateApiUsecase } from './domain/usecases/update-api.usecase';
-import { DeleteApiUsecase } from './domain/usecases/delete-api.usecase';
-import { FindAllApisUsecase } from './domain/usecases/find-all-apis.usecase';
+import { ApiController } from './interface/controller/api.controller';
+import { FindApiUsecase } from './app/usecases/find-api.usecase';
+import { CreateApiUsecase } from './app/usecases/create-api.usecase';
+import { UpdateApiUsecase } from './app/usecases/update-api.usecase';
+import { DeleteApiUsecase } from './app/usecases/delete-api.usecase';
+import { FindAllApisUsecase } from './app/usecases/find-all-apis.usecase';
 import { FindAllApisService } from './domain/services/find-all-apis.service';
 import { FindApiService } from './domain/services/find-api.service';
 import { CreateApiService } from './domain/services/create-api.service';

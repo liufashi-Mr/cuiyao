@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { FindAllProjectsService } from '../services/find-all-projects.service';
-import { QueryProjectDto } from '../../client/dto/query-project.dto';
+import { QueryProjectDto } from '../../app/dto/query-project.dto';
 
 @Injectable()
 export class FindAllProjectsUsecase {

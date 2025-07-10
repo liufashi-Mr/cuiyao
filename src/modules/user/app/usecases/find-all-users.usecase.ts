@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { FindAllUsersService } from '../services/find-all-users.service';
-import { QueryUserDto } from '../../client/dto/query-user.dto';
+import { FindAllUsersService } from '../../domain/services/find-all-users.service';
+import { QueryUserDto } from '../../app/dto/query-user.dto';
 
 @Injectable()
 export class FindAllUsersUsecase {

@@ -1,5 +1,5 @@
 import { DynamicModule, Module, Provider } from '@nestjs/common';
-import { ProjectController } from './interface/project.controller';
+import { ProjectController } from './interface/controller/project.controller';
 import { FindProjectUsecase } from './domain/usecases/find-project.usecase';
 import { CreateProjectUsecase } from './domain/usecases/create-project.usecase';
 import { UpdateProjectUsecase } from './domain/usecases/update-project.usecase';

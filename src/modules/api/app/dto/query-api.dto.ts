@@ -13,11 +13,11 @@ export class QueryApiDto {
   @IsInt()
   @Min(1)
   @Max(100)
-  per_page?: number = 10;
+  perPage?: number = 10;
 
   @IsOptional()
   @IsString()
-  sort?: string = 'created_at';
+  sort?: string = 'createdAt';
 
   @IsOptional()
   @IsString()
@@ -46,7 +46,7 @@ export class QueryApiDto {
   }
 
   getPageSize(): number {
-    return this.per_page || 10;
+    return this.perPage || 10;
   }
 
   getOffset(): number {
@@ -54,7 +54,7 @@ export class QueryApiDto {
   }
 
   getOrderBy(): string {
-    return this.sort || 'created_at';
+    return this.sort || 'createdAt';
   }
 
   getOrderDirection(): string {

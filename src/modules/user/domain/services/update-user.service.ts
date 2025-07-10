@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { User } from '../entities/user.entity';
 import { USER_REPOSITORY } from 'src/shared/constants/repository';
-import { UpdateUserDto } from '../../client/dto/update-user.dto';
+import { UpdateUserDto } from '../../app/dto/update-user.dto';
 import { ExceptionFactory } from 'src/shared/exception/exception-factory';
 import { Op } from 'sequelize';
 

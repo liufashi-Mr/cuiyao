@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { FindUserService } from '../services/find-user.service';
+import { FindUserService } from '../../../user/domain/services/find-user.service';
 import { SingleResponse } from '@/shared/dto/single-response';
 
 @Injectable()

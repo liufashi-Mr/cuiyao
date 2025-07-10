@@ -10,14 +10,14 @@ import {
   ParseIntPipe,
   Inject,
 } from '@nestjs/common';
-import { FindProjectUsecase } from '../domain/usecases/find-project.usecase';
-import { CreateProjectUsecase } from '../domain/usecases/create-project.usecase';
-import { UpdateProjectUsecase } from '../domain/usecases/update-project.usecase';
-import { DeleteProjectUsecase } from '../domain/usecases/delete-project.usecase';
-import { FindAllProjectsUsecase } from '../domain/usecases/find-all-projects.usecase';
-import { CreateProjectDto } from '../client/dto/create-project.dto';
-import { UpdateProjectDto } from '../client/dto/update-project.dto';
-import { QueryProjectDto } from '../client/dto/query-project.dto';
+import { FindProjectUsecase } from '../../domain/usecases/find-project.usecase';
+import { CreateProjectUsecase } from '../../domain/usecases/create-project.usecase';
+import { UpdateProjectUsecase } from '../../domain/usecases/update-project.usecase';
+import { DeleteProjectUsecase } from '../../domain/usecases/delete-project.usecase';
+import { FindAllProjectsUsecase } from '../../domain/usecases/find-all-projects.usecase';
+import { CreateProjectDto } from '../../app/dto/create-project.dto';
+import { UpdateProjectDto } from '../../app/dto/update-project.dto';
+import { QueryProjectDto } from '../../app/dto/query-project.dto';
 
 @Controller('projects')
 export class ProjectController {

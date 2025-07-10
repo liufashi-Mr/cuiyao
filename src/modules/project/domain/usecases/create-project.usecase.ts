@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateProjectService } from '../services/create-project.service';
 import { SingleResponse } from '@/shared/dto/single-response';
-import { CreateProjectDto } from '../../client/dto/create-project.dto';
+import { CreateProjectDto } from '../../app/dto/create-project.dto';
 
 @Injectable()
 export class CreateProjectUsecase {

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { CreateUserService } from '../services/create-user.service';
+import { CreateUserService } from '../../domain/services/create-user.service';
 import { SingleResponse } from '@/shared/dto/single-response';
-import { CreateUserDto } from '../../client/dto/create-user.dto';
+import { CreateUserDto } from '../../app/dto/create-user.dto';
 
 @Injectable()
 export class CreateUserUsecase {

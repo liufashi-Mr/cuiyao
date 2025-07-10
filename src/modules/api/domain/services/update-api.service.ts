@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { Api } from '../entities/api.entity';
 import { API_REPOSITORY } from 'src/shared/constants/repository';
-import { UpdateApiDto } from '../../client/dto/update-api.dto';
+import { UpdateApiDto } from '../../app/dto/update-api.dto';
 import { ExceptionFactory } from 'src/shared/exception/exception-factory';
 import { Op } from 'sequelize';
 import { ErrorCode } from '@/shared/constants/error-code';
